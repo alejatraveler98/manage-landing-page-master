@@ -1,0 +1,28 @@
+.button{
+    padding:1rem 2rem;
+    width: 200px;
+    // margin:0 auto 1rem ;
+    border-radius: 40px;
+    color:white;
+    font-weight: 600;
+    &-started{
+       background-color: var(--bright-red); 
+       @include media(medium){
+            // margin-right:1rem; 
+       }
+    }
+    // &-Mac{
+    //     background-color: var(--Light-Blue);
+    // }
+
+    // &-Mac:hover, &-iOS:hover{
+    //     opacity: 0.9;
+    // }
+    
+    // @include media(small){
+    //     width:45%; 
+    // }
+    // @include media(medium){
+    //     width:30%; 
+    // }
+}

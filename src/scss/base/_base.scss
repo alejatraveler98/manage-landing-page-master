@@ -1,18 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,700;1,500&display=swap');
 *,*::before, *::after{
     box-sizing: border-box;
 }
 
 body{
     margin:0;
-    @include font('Merienda',normal,400,normal,normal)
+    @include font('Be Vietnam',normal,400,normal,normal)
 }
 
 a{
     text-decoration: none;
-    @include media(medium){
-        display: inline-block;
-    }
+    display: inline-block;
 }
 
 ul{
@@ -31,8 +29,13 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
     font-size: var(--h1-font-size);
+    color:var(--dark-blue);
 }
 
 h2{
     font-size: var(--h2-font-size);
+}
+
+p{
+    color:var(--dark-grayish-blue);
 }

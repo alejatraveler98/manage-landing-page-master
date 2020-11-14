@@ -48,7 +48,7 @@ gulp.task('html-min', () => {
 		.src('./src/*.html')
 		.pipe(plumber())
 		.pipe(htmlmin({
-			collapseWhitespace: true,
+			collapseWhitespace: false,
 			removeComments: true
 		}))
 		.pipe(cacheBust({

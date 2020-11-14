@@ -13,7 +13,7 @@ $mb     : 1rem;
     
 }
 
-.center-i{
+.center-responsive{
     text-align: center ;
     @include media(large){
         text-align: left;
