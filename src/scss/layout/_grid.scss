@@ -12,6 +12,9 @@ $mb     : 1rem;
     }
     
 }
+.center{
+    text-align: center;
+}
 
 .center-responsive{
     text-align: center ;
@@ -26,6 +29,9 @@ $mb     : 1rem;
 
 .mb-2{
     @include mb(2rem);
+}
+.mb-3{
+    @include mb(3rem);
 }
 
 .mb-separation{

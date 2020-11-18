@@ -1,0 +1,16 @@
+.about{
+
+    &__title, &__paragraph{
+        padding: 0 3rem;
+    }
+}
+
+.items__button{
+    @extend .button-started;
+    padding     : .3rem 1rem;
+    margin-right: .5rem;
+}
+
+.items__title{
+    display: inline-block;
+}

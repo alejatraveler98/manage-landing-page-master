@@ -1,0 +1,38 @@
+.card{
+    padding: 0 4rem;
+
+    &__items:nth-child(1){
+        display: block;
+    }
+    &__items{
+        margin-bottom: 2rem;
+        display: none;
+    }
+    &__img{
+        width: 3rem;
+        margin:0 auto 1rem;
+        display: block;
+    }
+    &__name{
+        color:var(--dark-blue);
+        font-weight: 700;
+    }
+
+    &__slide{
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.slide__item{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border:1px solid var(--bright-red);
+    margin: 0 5px;
+}
