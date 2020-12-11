@@ -4,24 +4,16 @@
     border-radius: 40px;
     color:white;
     font-weight: 600;
-    // &--started{
-    //     // @extend %button; 
-    //    background-color: var(--bright-red); 
-    //    @include media(medium){
-    //         // margin-right:1rem; 
-    //    }
-    // }
-    // &-Mac{
-    //     background-color: var(--Light-Blue);
-    // }
-
-    // &-Mac:hover, &-iOS:hover{
-    //     opacity: 0.9;
-    // }
-
 }
 
 .button-started{
     @extend .button;
     background-color: var(--bright-red); 
+}
+
+.button--footer{
+    @extend .button-started;
+    width: 100px;
+    padding: .3rem 0;
+    height: 40px;    
 }
