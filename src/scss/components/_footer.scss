@@ -8,8 +8,32 @@
         justify-content: space-evenly;
     }
 
+    &__nav{
+        display: flex;
+        justify-content: space-between;    
+        margin:0 3rem 3rem;
+    }
+
     &__about{
         
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        padding:0 2rem;
+        margin-bottom: 4rem;
+    }
+    &__logo{
+        display: block;
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    &__images{
+        width:2.5rem;
     }
 
 }
@@ -20,14 +44,6 @@
     margin-right: 1rem;
 }
 
-
-
-.footer__nav{
-    display: flex;
-    justify-content: space-between;    
-    margin:0 3rem 3rem;
-}
-
 .nav__item{
     padding:.5rem 1rem;
 }
@@ -35,13 +51,8 @@
     color:white;
 }
 
-
-.footer__icons{
-    display: flex;
-    justify-content: space-between;
-    padding:0 1rem;
-}
-
-.footer__images{
-    width:2.5rem;
+.credits{
+    text-align: center;
+    color:var(--dark-grayish-blue); 
+    padding-bottom: 2.5rem;
 }
