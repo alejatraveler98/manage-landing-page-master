@@ -16,9 +16,43 @@
 }
 
 .main-menu{
-    display: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
+    position  : absolute;
+    height    : 100vh;
+    top       : 150px;
+    bottom    : 0;
+    right     : 0;
+    left      : 0;
+
+    &__list{
+        width           : 90%;
+        opacity         : 0;
+        position        : fixed;
+        top             : 100px;
+        right           : 0;
+        left            : 0;
+        margin-left     : auto;
+        margin-right    : auto;
+        background-color: #fff;
+        pointer-events  : none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    &__link{
+        padding: 1rem;
+        color: var(--very-dark-blue);
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
 }
 
+//Toggle
+.show-menu{
+    pointer-events: initial;
+    opacity       : 1;
+}
 
 //Imagenes Header
 .header-logo{
@@ -29,6 +63,18 @@
     width : 1.8rem;
     height: 1.4rem ;
     @include media(medium){
-       display: none;
+        display: none;
     }   
+}
+
+.close-menu{
+  display: none;
+}
+
+.close-menu-active{
+    display: block;
+}
+
+.show-menu-inactive{
+    display: none;
 }
