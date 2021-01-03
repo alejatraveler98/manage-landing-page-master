@@ -39,6 +39,9 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @include media(medium){
+              opacity: 1;
+        }
     }
     &__link{
         padding: 1rem;
@@ -71,7 +74,7 @@
   display: none;
 }
 
-.close-menu-active{
+.open-menu{
     display: block;
 }
 

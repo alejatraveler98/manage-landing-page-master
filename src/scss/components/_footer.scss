@@ -1,17 +1,16 @@
 .footer{
     background-color: var(--very-dark-blue);
-    // margin:0 auto;
 
     &__form{
-        padding: 3rem 1rem 0;
-        display: flex;
+        padding        : 3rem 1rem 0;
+        display        : flex;
         justify-content: space-evenly;
     }
 
     &__nav{
-        display: flex;
-        justify-content: space-between;    
-        margin:0 3rem 3rem;
+        display        : flex;
+        justify-content: space-between;
+        margin         : 0 3rem 3rem;
     }
 
     &__about{
@@ -19,40 +18,40 @@
     }
 
     &__icons{
-        display: flex;
+        display        : flex;
         justify-content: space-between;
-        padding:0 2rem;
-        margin-bottom: 4rem;
+        padding        : 0 2rem;
+        margin-bottom  : 4rem;
     }
     &__logo{
-        display: block;
-        width: 220px;
-        margin-left: auto;
-        margin-right: auto;
+        display      : block;
+        width        : 220px;
+        margin-left  : auto;
+        margin-right : auto;
         margin-bottom: 3rem;
     }
 
     &__images{
-        width:2.5rem;
+        width: 2.5rem;
     }
 
 }
 .input__email{
-    display: block;
-    width: 90%;
-    height:40px;
+    display     : block;
+    width       : 90%;
+    height      : 40px;
     margin-right: 1rem;
 }
 
 .nav__item{
-    padding:.5rem 1rem;
+    padding: .5rem 1rem;
 }
 .nav__link{
-    color:white;
+    color: white;
 }
 
 .credits{
-    text-align: center;
-    color:var(--dark-grayish-blue); 
+    text-align    : center;
+    color         : var(--dark-grayish-blue);
     padding-bottom: 2.5rem;
 }
