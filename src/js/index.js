@@ -2,7 +2,6 @@ const show         = document.getElementById('show-menu')
 const menu         = document.getElementById('main-menu')
 const menuList     = document.getElementById('main-menu__list')
 const closeMenu = document.getElementById('close-menu')
-// const close        = document.getElementById('')
 
     show.addEventListener('click',()=>{
             menu.classList.add('main-menu')

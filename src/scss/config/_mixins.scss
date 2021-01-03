@@ -53,7 +53,7 @@
       @media screen and (min-width : map_get($breakpoints, $breakpoint)) {
         @content;
       }
-    } @else if type-of($breakpoint)==number and unit(s$breakpoint == 'px'){
+    } @else if type-of($breakpoint)== number and unit($breakpoint) == 'px'{
       @media screen and (min-width : $breakpoint) {
         @content;
       }

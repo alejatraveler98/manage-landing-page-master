@@ -6,6 +6,9 @@
 body{
     margin: 0;
     @include font('Be Vietnam',normal,400,normal,normal);
+    @include media(830px){
+         overflow-y:scroll!important; 
+    }
 }
 
 a{
