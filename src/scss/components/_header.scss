@@ -1,11 +1,11 @@
 .main-header{
     margin-top   : 2.3rem;
-    margin-bottom: 3rem;
-    
-    @include media(830px){
+    margin-bottom: 4rem;
+    @include media(1095px){
         display        : flex;
         justify-content: space-between;
         align-items    : center;
+        margin-bottom: 110px;
     }
 
     &__logo{
@@ -24,7 +24,7 @@
     right     : 0;
     left      : 0;
     
-    @include media(830px){
+    @include media(1095px){
           position  : initial;
           height    : auto;
           background: initial;
@@ -46,7 +46,7 @@
         flex-direction  : column;
         justify-content : space-between;
 
-        @include media(830px){
+        @include media(1095px){
               opacity       : 1;
               flex-direction: row;
               position      : initial;
@@ -76,7 +76,7 @@
 .header-hamburger{
     width : 1.8rem;
     height: 1.4rem ;
-    @include media(830px){
+    @include media(1095px){
         display: none;
     }   
 }
@@ -87,7 +87,7 @@
 
 .open-menu{
     display: block;
-    @include media(830px){
+    @include media(1095px){
           display: none;
     }
 }

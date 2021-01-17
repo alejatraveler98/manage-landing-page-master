@@ -11,6 +11,15 @@
     background-color: var(--bright-red);
 }
 
+.button-header{
+    @extend .button-started;
+    display: none;
+
+    @include media(1095px){
+          display: block;
+    }
+}
+
 .button--footer{
     @extend .button-started;
     width  : 100px;
