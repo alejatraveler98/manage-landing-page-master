@@ -9,6 +9,11 @@
 .button-started{
     @extend .button;
     background-color: var(--bright-red);
+    @include media(medium){ 
+        &:hover{
+            opacity: .6;
+        }
+    }
 }
 
 .button-header{
@@ -25,4 +30,5 @@
     width  : 100px;
     padding: .3rem 0;
     height : 40px;
+    border: 0;
 }

@@ -18,16 +18,10 @@
             align-self : start;
         }
         position: relative;
-        &::after{
-            position: absolute;
-            content: 'Por favor ingresa un correo válido';
-            top:5.5rem;
-            left:1rem;
-            color:red;
-            animation-name    : fade;
-            animation-duration: 1s;
-        }
+        
     }
+
+    
 
     &__nav{
             display        : flex;
@@ -107,3 +101,16 @@
 
 }
 
+.no-after::after{
+    content: '';
+}
+
+.alert::after{
+    position: absolute;
+    content: 'Please enter a valid email';
+    top:5.5rem;
+    left:1rem;
+    color:#FF6961;
+    animation-name    : fade;
+    animation-duration: 1s;
+}

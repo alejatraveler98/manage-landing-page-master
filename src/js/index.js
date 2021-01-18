@@ -1,10 +1,17 @@
-const show = document.getElementById('show-menu')
-const menu = document.getElementById('main-menu')
-const menuList = document.getElementById('main-menu__list')
-const closeMenu = document.getElementById('close-menu')
-const cardSlide = document.querySelectorAll('.card__items')
-let mediaQueryList = window.matchMedia("(min-width:1000px)")
+const show           = document.getElementById('show-menu')
+const menu           = document.getElementById('main-menu')
+const menuList       = document.getElementById('main-menu__list')
+const closeMenu      = document.getElementById('close-menu')
+const cardSlide      = document.querySelectorAll('.card__items')
+const emailValue     = document.getElementById('inputEmail')
+const form           = document.getElementById('form')
+let   mediaQueryList = window.matchMedia("(min-width:1000px)")
 
+form.classList.add('no-after')
+
+const resetValues = () =>{
+        emailValue.value = ''
+}
 //Funciones
 const showSlide = (slide_index) => {
         console.log(cardSlide[0]);
@@ -16,7 +23,27 @@ const showSlide = (slide_index) => {
         cardSlide[slide_index].classList.add('display-block')
 }
 
+const validation = () =>{
+        let expReg   = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        let validate = expReg.test(emailValue.value)
+        
+        if(validate){
+        
+        }else{ 
+              form.classList.add('alert') 
+              setTimeout(()=>{
+                      form.classList.remove('alert')
+                      resetValues()
+              },2000)              
+        }
+}
+
+
 //EventListener
+form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        validation();
+} )
 
 mediaQueryList.addEventListener("change",function(EventMediaQueryList){
         if (EventMediaQueryList.matches) {
@@ -28,7 +55,7 @@ mediaQueryList.addEventListener("change",function(EventMediaQueryList){
                  //Change Images
         document.querySelectorAll('.slide__item').forEach(slide => {
                 slide.addEventListener('click', function () {
-                        let slides = Array.prototype.slice.call(this.parentElement.children)
+                        let slides      = Array.prototype.slice.call(this.parentElement.children)
                         let slide_index = slides.indexOf(slide)
                         console.log(slide_index);
                         showSlide(slide_index)

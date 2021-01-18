@@ -5,7 +5,7 @@
         display        : flex;
         justify-content: space-between;
         align-items    : center;
-        margin-bottom: 110px;
+        margin-bottom  : 110px;
     }
 
     &__logo{
@@ -52,6 +52,7 @@
               position      : initial;
               height        : auto;
               width         : initial;
+              pointer-events: initial;
         }
     }
     &__link{
@@ -59,6 +60,12 @@
         color      : var(--very-dark-blue);
         font-weight: 700;
         font-size  : 1.2rem;
+
+        @include media(1095px){
+            &:hover{
+                color:var(--dark-grayish-blue)
+            }
+        }
     }
 }
 
