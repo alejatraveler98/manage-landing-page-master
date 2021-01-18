@@ -86,6 +86,12 @@
 }
 .nav__link{
     color: white;
+
+    @include media(medium){
+          &:hover{
+              color:var(--dark-grayish-blue);
+          }
+    }
 }
 
 .credits{
